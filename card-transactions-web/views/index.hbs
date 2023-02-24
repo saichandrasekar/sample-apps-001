@@ -15,8 +15,8 @@
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script type="text/javascript">
     $(document).ready(function(){
-      console.log('I am here');
-       $.get("http://localhost:18000/transactions", function(data, status){
+      //console.log('I am here');
+       $.get(window.location.protocol+"//"+window.location.hostname+":18000/transactions", function(data, status){
 //    console.log("Data: " + data + "\nStatus: " + status);
 
 $('#response-container').text(JSON.stringify(data))
