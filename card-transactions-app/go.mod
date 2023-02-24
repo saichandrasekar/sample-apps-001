@@ -1,4 +1,4 @@
-module karupan/card-transactions
+module karupan/card-transactions-app
 
 go 1.20
 

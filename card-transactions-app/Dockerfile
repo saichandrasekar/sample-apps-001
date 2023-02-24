@@ -10,8 +10,8 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /card-transactions
+RUN go build -o /card-transactions-app
 
 EXPOSE 18000
 
-CMD [ "/card-transactions" ]
+CMD [ "/card-transactions-app" ]
