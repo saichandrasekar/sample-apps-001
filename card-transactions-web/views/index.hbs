@@ -16,7 +16,7 @@
     <script type="text/javascript">
     $(document).ready(function(){
       //console.log('I am here');
-       $.get(window.location.protocol+"//"+window.location.hostname+":18000/transactions", function(data, status){
+       $.get(/ct/transactions", function(data, status){
 //    console.log("Data: " + data + "\nStatus: " + status);
 
 $('#response-container').text(JSON.stringify(data))

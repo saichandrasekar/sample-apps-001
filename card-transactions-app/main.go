@@ -51,9 +51,9 @@ func main() {
 
 	router := gin.Default()
 	router.Use(CORSMiddleware())
-	router.GET("/", getHealth)
+	router.GET("/ct/", getHealth)
 	// router.GET("/albums", getAlbums)
-	router.GET("/transactions", getTransactions)
+	router.GET("/ct/transactions", getTransactions)
 
 	router.Run("0.0.0.0:18000")
 }
