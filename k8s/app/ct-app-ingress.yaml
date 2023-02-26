@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ct-app-ingress
+  namespace: ct-app-ns
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /ct
+        pathType: Prefix
+        backend:
+          service:
+            name: ct-app-service
+            port:
+              number: 18000
+

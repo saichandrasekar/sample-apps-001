@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ct-app
+  namespace: ct-app-ns
+  labels:
+    app: ct-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ct-app
+  template:
+    metadata:
+      labels:
+        app: ct-app
+    spec:
+      containers:
+      - name: ct-app
+        image: saichandrasekar/ct-app:1.0.0
+        ports:
+        - containerPort: 18000
