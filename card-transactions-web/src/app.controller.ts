@@ -11,7 +11,7 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Get()
+  @Get('/ct-web')
   @Render('index')
   root() {    
     console.log('index @ :: '+Date.now())

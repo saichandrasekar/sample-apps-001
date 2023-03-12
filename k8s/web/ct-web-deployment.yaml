@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: ct-web
-        image: saichandrasekar/ct-web:1.0.0
+        image: saichandrasekar/ct-web:1.0.3
         ports:
         - containerPort: 18080

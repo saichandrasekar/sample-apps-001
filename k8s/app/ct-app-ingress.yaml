@@ -14,4 +14,10 @@ spec:
             name: ct-app-service
             port:
               number: 18000
-
+      - path: /ct-web
+        pathType: Prefix
+        backend:
+          service:
+            name: ct-web-service
+            port:
+              number: 18080

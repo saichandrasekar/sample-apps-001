@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: ct-app
-        image: saichandrasekar/ct-app:1.0.0
+        image: saichandrasekar/ct-app:1.0.1
         ports:
         - containerPort: 18000
